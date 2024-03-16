@@ -39,6 +39,7 @@
   background-color: var(--color-tirkizna);
   border: none;
   border-radius: 0.3rem;
+  color: var(--color-svetla-ljubicasta);
 }
 
 .image {
