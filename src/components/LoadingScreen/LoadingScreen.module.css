@@ -1,0 +1,34 @@
+@keyframes animacija {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.background {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-tamna-ljubicasta);
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.picture {
+  margin-top: 3rem;
+  cursor: pointer;
+  animation-name: animacija;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}

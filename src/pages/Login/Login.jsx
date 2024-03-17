@@ -3,6 +3,27 @@ import style from "./Login.module.css";
 import image from "../../images/TEST.png";
 
 const login = () => {
+  const usernameArray = ["admin", "fonis", "milan"];
+  const passwordArray = ["admin", "fonis", "jasamlanmimajami"];
+
+  function openHomepage() {
+    const usernameInput = document.getElementById("username").value;
+    const passwordInput = document.getElementById("password").value;
+
+    if (
+      (usernameArray[0] === usernameInput &&
+        passwordArray[0] === passwordInput) ||
+      (usernameArray[1] === usernameInput &&
+        passwordArray[1] === passwordInput) ||
+      (usernameArray[2] === usernameInput && passwordArray[2] === passwordInput)
+    ) {
+      window.location.replace("http://localhost:3000/#/Homepage");
+      console.log("Gay");
+    } else {
+      alert("Kredencijali nisu na mestu, MAJMUNEEEEE!!");
+    }
+  }
+
   return (
     <div className={style.background}>
       <div className={style.main}>
@@ -31,8 +52,10 @@ const login = () => {
         />
 
         <div className={style.buttons}>
-          <button>Prijavi se</button>
-          <button>Registruj se</button>
+          <div className={style.button1} onClick={openHomepage}>
+            Prijavi se
+          </div>
+          <div className={style.button2}>Registruj se</div>
         </div>
       </div>
 
