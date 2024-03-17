@@ -3,8 +3,8 @@ import style from "./Login.module.css";
 import image from "../../images/TEST.png";
 
 const login = () => {
-  const usernameArray = ["admin", "fonis", "milan"];
-  const passwordArray = ["admin", "fonis", "jasamlanmimajami"];
+  const usernameArray = ["admin", "lukapetrovic00@gmail.com", "milan"];
+  const passwordArray = ["admin", "luka", "jasamlanmimajami"];
 
   function openHomepage() {
     const usernameInput = document.getElementById("username").value;
@@ -32,7 +32,7 @@ const login = () => {
           <h4 className={style.sub_heading}>ako smes</h4>
         </div>
 
-        <label htmlFor="username">Korisnicko ime</label>
+        <label htmlFor="username">e-mail adresa</label>
 
         <input
           type="text"
